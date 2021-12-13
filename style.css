@@ -4,3 +4,58 @@
 *   {
         box-sizing: border-box;
 }
+
+body {
+        background-color: #2a2e50;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+}
+
+main {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.movie {
+        background-color: #373b69;
+        border-radius: 3px;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        margin: 1rem;
+        width: 200px;
+}
+
+.movie img {
+        max-width: 100%;
+}
+
+.movie-info {
+        color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 1rem;
+        letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+        margin: 0;
+}
+
+.movie-info span {
+        background-color: #2a2e50;
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+        color: rgb(10, 170, 10);
+}
+
+.movie-info span.orange {
+        color: orange;
+}
+
+.movie-info span.red {
+        color: red;
+}

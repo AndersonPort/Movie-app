@@ -11,6 +11,31 @@ body {
         margin: 0;
 }
 
+header {
+        background-color: #373b69;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+}
+
+.search {
+        background-color: transparent;
+        border: 2px solid #2a2e50;
+        border-radius: 40px;
+        color: #fff;
+        font-family: inherit;
+        padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+        color: #737ac7;
+}
+
+.search:focus {
+        background-color: #2a2e50;
+        outline: none;
+}
+
 main {
         display: flex;
         flex-wrap: wrap;
@@ -18,6 +43,8 @@ main {
 
 .movie {
         background-color: #373b69;
+        overflow: hidden;
+        position: relative;
         border-radius: 3px;
         box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
         margin: 1rem;
@@ -58,4 +85,26 @@ main {
 
 .movie-info span.red {
         color: red;
+}
+
+.overview {
+        background-color: rgb(218, 210, 210);
+        padding: 1rem;
+        font-size: 12px;
+        position: absolute;
+        max-height: 100%;
+        overflow: auto;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform: translateY(101%);
+        transition: transform 0.3s ease-in;
+}
+
+.overview h4 {
+        margin-top: 0;
+}
+
+.movie:hover .overview {
+        transform: translateY(0);
 }
